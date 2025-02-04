@@ -38,7 +38,7 @@ function calcular() {
     var resultadoFormatado = Number(resultado.toFixed(2));
 
     //Atualizando estilos do formulário
-    containerForm.style.background = "url('./imagens/image 3.png'),linear-gradient(rgba(250, 250, 250, 0.4), rgba(0, 0, 0, 0.6)), rgba(255, 255, 255, 0.15)";
+    containerForm.style.background = "url('./imagens/image 3.png'), rgba(255, 255, 255, 0.15)";
     containerForm.style.backgroundSize = "105%, cover";
     containerForm.style.backgroundRepeat = "no-repeat";
     containerForm.style.height = "350px";
@@ -47,6 +47,7 @@ function calcular() {
     containerForm.style.alignItems = "center";
     containerForm.style.textAlign = "center";
     containerForm.style.justifyContent = "space-between";
+
     containerForm.style.fontFamily = "Montserrat, serif";
     containerForm.style.margin = "10px";
 
@@ -80,6 +81,7 @@ function calcular() {
     botao_voltar.style.cursor = "pointer";
     botao_voltar.style.boxShadow = " 8px 8px 4px rgba(255, 255, 255, 0.5);";
     botao_voltar.style.backgroundColor = "#4CAF50";
+    botao_voltar.style.color = "white";
     botao_voltar.style.borderRadius = "5px";
     botao_voltar.style.border = "none";
     containerForm.appendChild(botao_voltar);
@@ -103,7 +105,7 @@ function calcular() {
         containerArrow.style.left = "140px";
     }
     
-
+    titulo.style.color = "white";
     titulo.textContent = `${nomeFormatado}, o seu IMC é: ${resultadoFormatado}`;
     conteudoForm.textContent = "";
 }
