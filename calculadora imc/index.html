@@ -7,8 +7,10 @@
     <title>IMC</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!--adicionando fontes-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -21,48 +23,44 @@
                 </section>
                 <!-- logo -->
                 <section>
-                    <img src="./imagens/lines-cycle-leaf-b.png" width="70" height="65"
-                        alt="foto-logo">
+                    <img src="./imagens/lines-cycle-leaf-b.png" width="65" height="55" alt="foto-logo">
                 </section>
         </section>
         </div>
-    </header>
-    <main>
+    </header> 
+    <main> <!--Formulário para por as medidas e fazer o calculo-->
         <div id="container2">
             <div id="box1">
                 <div id="formulario">
                     <div id="titulo-form">
                         <h1>Preencha com as sua informações.</h1>
                     </div>
-                    <div class="caixa-mensagem">
-                        <label for="nome">Nome:</label>
-                        <input type="text" id="nome" name="nome" placeholder="Digite aqui..." required>
+                    <div id="conteudo">
+
+                        <div class="caixa-mensagem">
+                            <label for="nome"></label>
+                            <input type="text" id="nome" name="nome" placeholder="Nome:" required>
+                        </div>
+                        <div class="caixa-mensagem">
+                            <label for="altura"></label>
+                            <input type="number" id="altura" name="altura" placeholder="Altura(cm):" required>
+                        </div>
+                        <div class="caixa-mensagem">
+                            <label for="peso"></label>
+                            <input type="number" id="peso" name="peso" placeholder="Peso(kg):" required>
+                        </div>
+                        <div id="btn-cal"> <!-- botao para calcular -->
+                            <button onclick="calcular()">Calcular</button>
+                        </div>
                     </div>
-                    <div class="caixa-mensagem">
-                        <label for="altura">Altura(cm):</label>
-                        <input type="number" id="altura" name="altura" placeholder="Digite aqui..." required>
-                    </div>
-                    <div class="caixa-mensagem">
-                        <label for="peso">Peso(kg):</label>
-                        <input type="number" id="peso" name="peso" placeholder="Digite aqui..." required>
-                    </div>
-                    <div id="btn-cal">
-                        <button onclick="calcular()">Calcular</button>
-                    </div>
+                    <div id="seta"></div>
                 </div>
 
             </div>
         </div>
     </main>
-    <footer>
-        <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </footer>
-    <script src="script.js"></script>
+    <footer id = "footer"></footer>
+    <script src="script.js"></script> <!--link para o js-->
 </body>
 
 </html>
